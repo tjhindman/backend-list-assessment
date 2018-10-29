@@ -12,7 +12,7 @@ based on your knowledge of Python list iteration and indexing.
 [list2.py](./list2.py) -- Additional list function completions.
 
 # Workflow for this Assignment
-1. *Fork* this repository into your own personal github account.
+1. *Fork* this repository into your own PERSONAL github account.
 2. Then *Clone* your own repo to your local development machine.
 3. Complete the missing parts of the files to pass the built-in tests.
 4. Commit your changes (with _meaningful_ commit messages e.g. not 'blah' or 'asdf' or 'updated code'), then `git push` back to your own github account.
