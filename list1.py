@@ -1,5 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""
+List 1 questions for backend string assessment.
+
+This is the first set of questions dealing with list manipulation.
+This assessment is for us to practice on our ability
+to work with lists.
+
+author: tjhindman
+"""
+
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -24,7 +34,14 @@
 # Note: python does not have a ++ operator, but += works.
 def match_ends(words):
     """Your code goes here.  Edit this docstring."""
-    return
+
+    count = 0
+
+    for s in words:
+        if len(s) >= 2 and s[0] == s[-1]:
+            count += 1
+
+    return count
 
 
 # B. front_x
@@ -36,7 +53,17 @@ def match_ends(words):
 # before combining them.
 def front_x(words):
     """Your code goes here.  Edit this docstring."""
-    return
+
+    x_words = []
+    other_w = []
+
+    for word in sorted(words):
+        if word.startswith('x'):
+            x_words.append(word)
+        else:
+            other_w.append(word)
+        
+    return x_words + other_w
 
 
 # C. sort_last
@@ -47,7 +74,11 @@ def front_x(words):
 # Hint: use a custom key= function to extract the last element form each tuple.
 def sort_last(tuples):
     """Your code goes here.  Edit this docstring."""
-    return
+
+    def sort_alg(x):
+        return x[-1]
+        
+    return sorted(tuples, key = sort_alg)
 
 
 # Simple provided test() function used in main() to print
